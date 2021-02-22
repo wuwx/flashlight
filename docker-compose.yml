@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hyperf:
+    build:
+      context: .
+    ports:
+      - 6969:6969
+    environment:
+      REDIS_HOST: redis
+  redis:
+    image: "redis"
